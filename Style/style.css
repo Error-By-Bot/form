@@ -1,0 +1,128 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #d3b495;
+}
+.container {
+  background-color: #d3b495;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+.login,
+.register {
+  background: #fff;
+  padding: 70px;
+  width: 500px;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0 30px 60px 0 rgba(0, 0, 0, 0.4);
+  margin: 100px 0;
+}
+
+.register h1 {
+  margin: 0;
+}
+.register {
+  padding: 40px 70px;
+}
+.register form {
+  margin: 30px 0;
+}
+.register h1::after {
+  margin: 20px 0;
+}
+h1 {
+  font-weight: 700;
+  font-size: 40px;
+  text-transform: capitalize;
+  position: relative;
+  margin-bottom: 10px;
+  color: #d0853ac2;
+}
+h1::after {
+  content: "";
+  position: absolute;
+  width: 30%;
+  height: 3px;
+  background-color: #d0853a;
+  top: 80%;
+  left: 35%;
+  margin: 30px 0;
+}
+
+form {
+  margin-top: 50px;
+}
+.form-control {
+  width: 100%;
+  margin: 20px 0;
+}
+.form-control label {
+  display: block;
+  text-align: left;
+  font-size: 22px;
+  margin-bottom: 10px;
+  color: #d3b495;
+}
+.form-control input {
+  padding: 15px 20px;
+  width: 100%;
+  background-color: #fcf8f5;
+  border: 2px #8888883e solid;
+  border-radius: 5px;
+  outline: none;
+}
+
+.form-control input:focus {
+  border: #d0853a 2px solid;
+}
+.btn {
+  width: 100%;
+  background-color: #d3b495;
+  color: #fff;
+  padding: 10px 15px;
+  margin: 20px 0;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  border: 1px #d3b495 solid;
+  transition: 0.3s;
+  font-weight: 600;
+  font-size: 20px;
+  text-transform: capitalize;
+}
+.btn:hover {
+  background-color: transparent;
+  color: #d0853a;
+}
+p {
+  color: #888;
+  font-size: 15px;
+}
+.register-link {
+  color: #d0853a;
+  text-decoration: none;
+  text-transform: capitalize;
+  font-weight: 600;
+  position: relative;
+  transition: 0.3s;
+}
+.register-link::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 0%;
+  height: 2px;
+  background-color: #d0853a;
+  transition: 0.3s;
+}
+.register-link:hover::after {
+  width: 100%;
+}
